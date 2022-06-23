@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="data\.DS_Store" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="data\ao-bin-dumps\items.xml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Remove="data\ao-bin-dumps\templates\**" />
+      <None Remove="data\ao-bin-dumps\cluster\**" />
+      <None Remove="data\ao-bin-dumps\formatted\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="data\ao-bin-dumps\templates\**" />
+      <Compile Remove="data\ao-bin-dumps\cluster\**" />
+      <Compile Remove="data\ao-bin-dumps\formatted\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="data\ao-bin-dumps\templates\**" />
+      <EmbeddedResource Remove="data\ao-bin-dumps\cluster\**" />
+      <EmbeddedResource Remove="data\ao-bin-dumps\formatted\**" />
+    </ItemGroup>
+
+</Project>

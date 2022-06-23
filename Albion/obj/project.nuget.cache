@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oKYu5umRUAGm/owy9+ksaMN9fF/kKEzblfK3mXRaPPdHYKX5eI0w5NJd70FK0rW8w4FJeuCGlmB41mjqU98D0A==",
+  "success": true,
+  "projectFilePath": "/Users/boathouse/Projects/rider/Albion/Albion/Albion.csproj",
+  "expectedPackageFiles": [
+    "/Users/boathouse/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

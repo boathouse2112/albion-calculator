@@ -1,0 +1,5 @@
+/Albion/bin/*
+/Albion/obj/Debug/*
+/Albion/data/ao-bin-dumps/*
+
+!/Albion/data/ao-bin-dumps/items.xml
